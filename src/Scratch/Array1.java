@@ -18,7 +18,7 @@ public class Array1 {
         arr[3] = 40;
         arr[4] = 50;
 
-        for (int i = arr.length-1; i< arr.length; i--){
+        for (int i = arr.length-1; i>=0; i--){
             System.out.println(arr[i]);
         }
 
