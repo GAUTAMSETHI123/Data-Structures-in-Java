@@ -18,12 +18,33 @@ public class LinkedList1 {
     private Node tail;
     private int size;
 
+    public LinkedList1() {
+        head = null;
+    }
+
 
     public void display(){
         Node temp = this.head;
         while (temp!=null){
             System.out.println(temp.data);
             temp = temp.next;
+        }
+    }
+
+    public void addLast(Node data){
+        if(head == null){
+            head = data;
+
+        }
+
+        else{
+            Node temp = this.head;
+            while(temp!=null){
+                temp = temp.next;
+            }
+            temp.next = data;
+
+
         }
     }
 
