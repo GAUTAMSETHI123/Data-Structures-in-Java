@@ -32,7 +32,7 @@ public class LinkedList1 {
     }
 
     public void addLast(Node data){
-        if(head == null){
+        if(isEmpty()){
             head = data;
 
         }
@@ -45,6 +45,25 @@ public class LinkedList1 {
             temp.next = data;
 
 
+        }
+    }
+
+    public boolean isEmpty(){
+        if(head == null){
+            return true;
+        }
+        return false;
+    }
+
+
+    public void addFront(Node data1){
+        if(isEmpty()){
+            head = data1;
+        }
+
+        else{
+            data1.next = head;
+            head = data1;
         }
     }
 
