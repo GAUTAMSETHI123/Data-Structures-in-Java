@@ -9,78 +9,84 @@ package LinkedList;
 
 public class LinkedList1 {
 
-    private class Node{
-         int data;
-         Node next;
-    }
+    Node head;
 
-    private Node head;
-    private Node tail;
-    private int size;
 
     public LinkedList1() {
         head = null;
     }
 
 
-    public void display(){
+    public void display() {
         Node temp = this.head;
-        while (temp!=null){
+        while (temp != null) {
             System.out.println(temp.data);
             temp = temp.next;
         }
     }
 
-    public void addLast(Node  data){
-        if(isEmpty()){
-            head = data;
+    public void addLast(Node newNode) {
+        if (isEmpty()) {
+            head = newNode;
 
-        }
-
-        else{
+        } else {
             Node temp = this.head;
-            while(temp!=null){
+            while (temp.next != null) {
                 temp = temp.next;
             }
-            temp.next = data;
+            temp.next = newNode;
 
 
         }
     }
 
-    public boolean isEmpty(){
-        if(head == null){
+    public boolean isEmpty() {
+        if (head == null) {
             return true;
         }
         return false;
     }
 
 
-    public void addFront(Node data1){
-        if(isEmpty()){
-            head = data1;
-        }
-
-        else{
-            data1.next = head;
-            head = data1;
+    public void addFront(Node newNode) {
+        if (isEmpty()) {
+            head = newNode;
+        } else {
+            newNode.next = head;
+            head = newNode;
         }
     }
 
-    public void addPos(int pos , Node data2){
+    public void addPos(int pos, Node data2) {
         Node temp = this.head;
-        for (int i = 0; i < pos-1; i++) {
+        for (int i = 0; i < pos - 1; i++) {
             temp = temp.next;
         }
-            data2.next= temp.next;
-            temp.next = data2;
+        data2.next = temp.next;
+        temp.next = data2;
 
 
-        }
     }
 
+    public void deleteEnd() {
 
+    }
 
 
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
