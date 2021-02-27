@@ -31,7 +31,7 @@ public class LinkedList1 {
         }
     }
 
-    public void addLast(Node data){
+    public void addLast(Node  data){
         if(isEmpty()){
             head = data;
 
@@ -66,6 +66,20 @@ public class LinkedList1 {
             head = data1;
         }
     }
+
+    public void addPos(int pos , Node data2){
+        Node temp = this.head;
+        for (int i = 0; i < pos-1; i++) {
+            temp = temp.next;
+        }
+            data2.next= temp.next;
+            temp.next = data2;
+
+
+        }
+    }
+
+
 
 
 
