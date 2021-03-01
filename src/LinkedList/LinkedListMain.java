@@ -14,7 +14,9 @@ public class LinkedListMain {
 
 
         ll.addFront(new Node(14));
-        ll.display();
+        ll.addFront(new Node(15));
+        ll.addFront(new Node(16));
 
+        ll.display();
     }
 }
