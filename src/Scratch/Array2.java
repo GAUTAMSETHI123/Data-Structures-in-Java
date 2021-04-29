@@ -21,12 +21,16 @@ public class Array2 {
         array[4] = 50;
 
 
-
+        int[] other = {100 , 200, 300};
         // for (int i = 0; i < array.length ; i++) {
         // System.out.println(array[i]);
         System.out.println("values are:" + array[i] + "and " + array[j]);
-        Swap(array,i,j);
+        //Swap(array,i,j);
         System.out.println("values are:" + array[i] + "and " + array[j]);
+        System.out.println("values are:" + array[i] + "and " + other[i]);
+        swap(array,other);
+        //no change after the swap function is called.
+        System.out.println("values are:" + array[i] + "and " + other[i]);
 
     }
 
@@ -35,4 +39,13 @@ public class Array2 {
         arr[i] = arr[j];
         arr[j] = temp;
     }
+
+
+    public static void swap(int[] one, int[]two){
+        int[]temp1 = one;
+        one = two;
+        two = temp1;
+    }
+
+
 }
