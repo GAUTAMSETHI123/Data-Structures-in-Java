@@ -18,22 +18,27 @@ public class ArrayOps {
         int [] array = new int[n];
 
 
-       int[] arr1 = takeInput(array);
+       int[] arr1 = takeInput();
        display(arr1);
 
 
 
     }
 
-    public static int[] takeInput(int [] arr){
+    public static int[] takeInput(){
+
+        int n = scan.nextInt();
+
+        int [] array = new int[n];
 
 
-        for (int i = 0; i < arr.length; i++) {
+
+        for (int i = 0; i < array.length; i++) {
             System.out.println("the value at index " + i + "is");
-            arr[i] = scan.nextInt();
+            array[i] = scan.nextInt();
 
         }
-        return arr;
+        return array;
     }
 
     public static void display(int[] arr){
