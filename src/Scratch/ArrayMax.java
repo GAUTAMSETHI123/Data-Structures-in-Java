@@ -16,19 +16,23 @@ public class ArrayMax {
         System.out.println("enter the size of the array");
         int n = scan.nextInt();
 
-        int [] array = new int[n];
+        int[] array = new int[n];
+        for (int i = 0; i < array.length; i++) {
+            array[i] = scan.nextInt();
 
-        System.out.println(returnMax(array));
+        }
+        int ret = returnMax(array);
+        System.out.println(ret);
 
 
     }
 
 
-    public static int returnMax(int[] arr){
-        int max= Integer.MIN_VALUE;
-        for(int i=0; i<arr.length; i++){
-            arr[i] = scan.nextInt();
-            if(arr[i] > max){
+    public static int returnMax(int[] arr) {
+        int max = Integer.MIN_VALUE;
+        for (int i = 0; i < arr.length; i++) {
+
+            if (arr[i] > max) {
                 max = arr[i];
             }
         }
@@ -37,9 +41,9 @@ public class ArrayMax {
 
     }
 
-    public static void display(int [] arr2){
-        for (int val: arr2
-             ) {
+    public static void display(int[] arr2) {
+        for (int val : arr2
+        ) {
             System.out.println(val);
         }
     }
