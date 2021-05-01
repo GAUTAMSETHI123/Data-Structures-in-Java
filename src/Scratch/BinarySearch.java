@@ -20,7 +20,7 @@ public class BinarySearch {
         int li = 0;
         int hi = arr1.length -1;
 
-        while(li<hi){
+        while(li<=hi){
             int mid = (li+hi)/2;
             if(arr1[mid]== item)
                 return mid;
