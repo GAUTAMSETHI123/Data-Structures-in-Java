@@ -5,7 +5,7 @@
  *   File: Node.java
  */
 
-package LinkedList;
+package SinglyLinkedList;
 
 public class Node {
 

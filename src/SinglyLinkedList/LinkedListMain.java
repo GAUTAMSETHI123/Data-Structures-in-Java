@@ -5,7 +5,7 @@
  *   File: LinkedListMain.java
  */
 
-package LinkedList;
+package SinglyLinkedList;
 
 public class LinkedListMain {
     public static void main(String[] args) {

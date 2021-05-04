@@ -5,7 +5,7 @@
  *   File: LinkedList1.java
  */
 
-package LinkedList;
+package SinglyLinkedList;
 
 public class LinkedList1 {
 
@@ -35,6 +35,7 @@ public class LinkedList1 {
                 temp = temp.next;
             }
             temp.next = newNode;
+            newNode.next = null;
 
 
         }
