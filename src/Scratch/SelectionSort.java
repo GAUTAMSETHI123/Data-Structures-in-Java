@@ -28,7 +28,7 @@ public class SelectionSort {
 
         System.out.println();
         int[] ret = selectionSort(arr);
-        System.out.println("sorted array is");
+        System.out.println(" The sorted array is");
         for (int val1 : ret
              ) {
             System.out.print(val1 + " ");
