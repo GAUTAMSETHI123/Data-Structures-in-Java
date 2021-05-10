@@ -1,8 +1,8 @@
-/*   Created by IntelliJ IDEA.
+package Scratch;/*   Created by IntelliJ IDEA.
  *   Author: Gautam Sethi (GAUTAMSETHI123)
  *   Date: 10-05-2021
  *   Time: 23:15
- *   File: Fibonacci.java
+ *   File: Scratch.Fibonacci.java
  */
 import java.util.Scanner;
 public class Fibonacci {
