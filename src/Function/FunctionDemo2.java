@@ -10,6 +10,7 @@ package Function;
 public class FunctionDemo2 {
     public static void main(String[] args) {
         int sum1 = sum(17,19);
+        System.out.println(sum1);
         if(sum1> 78){
             System.out.println("hi");
         }
@@ -21,7 +22,7 @@ public class FunctionDemo2 {
 
     public static int sum(int a , int b){
         int sum = a+b;
-        System.out.println(sum);
+
         return sum;
     }
 }
