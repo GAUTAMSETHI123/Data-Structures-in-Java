@@ -36,8 +36,6 @@ public class BubbleSort {
             System.out.print(val1 + " ");
 
         }
-
-
     }
 
     public static int[] bubbleSort1(int[] arr1, int size) {
@@ -55,4 +53,5 @@ public class BubbleSort {
         }
         return arr1;
     }
+
 }
