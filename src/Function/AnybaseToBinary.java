@@ -14,13 +14,13 @@ public class AnybaseToBinary {
         Scanner scn = new Scanner(System.in);
         int src = scn.nextInt();
         int srcB = scn.nextInt();
-        int res = anybaseToDecimal(src,srcB);
+        int res = anybaseToBinary(src,srcB);
         System.out.println(res);
 
     }
 
 
-    public static int anybaseToDecimal(int srcNo , int srcBase){
+    public static int anybaseToBinary(int srcNo , int srcBase){
         int multiplier = 1;
         int ans =0;
         while(srcNo!=0){
