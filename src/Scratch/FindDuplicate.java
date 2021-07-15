@@ -28,11 +28,13 @@ public class FindDuplicate {
                     count++;
                 }
             }
-            if(count==1 ||  count>=2){
-                System.out.print(arr[i]);
+            if(count==1 ){
+                System.out.println(arr[i]);
+            }
+
             }
 
 
         }
     }
-}
+
