@@ -44,7 +44,7 @@ public class ArrayIntersection {
         }
         System.out.println();
 
-        System.out.println("array intersection is");
+        System.out.println("array intersection is:");
 
         for(i=0; i<N; i++){
             for(j=0; j<N2; j++){
