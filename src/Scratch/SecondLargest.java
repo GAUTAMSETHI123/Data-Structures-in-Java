@@ -27,17 +27,23 @@ public class SecondLargest {
 
         }
 
-        for (int i = 0; i < N; i++) {
-            for (int j = i + 1; j < N; j++) {
-                if (arr[j] < arr[i]) {
-                    int temp = arr[j];
-                    arr[j] = arr[i];
-                    arr[i] = temp;
 
 
+
+            for ( int i = 0; i < N; i++) {
+                for ( int j = i + 1; j < N; j++) {
+                    if (arr[j] < arr[i]) {
+                        int temp = arr[j];
+                        arr[j] = arr[i];
+                        arr[i] = temp;
+
+
+                    }
                 }
             }
-        }
+
+
+
 
         System.out.println();
 
@@ -51,3 +57,4 @@ public class SecondLargest {
         System.out.println("second largest element in the array is " + arr[N-2]);
     }
 }
+
