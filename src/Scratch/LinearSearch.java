@@ -12,19 +12,28 @@ import java.util.Scanner;
 
 public class LinearSearch {
     public static void main(String[] args) {
-        int [] arr = new int[5];
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("enter the size of the array");
+        int n = scanner.nextInt();
 
-        arr[0] = 10;
-        arr[1] = 20;
-        arr[2] = 30;
-        arr[3] = 40;
-        arr[4] = 50;
+        int [] arr = new int[n];
 
-        System.out.println(search(arr,40));
+        System.out.println("enter array elements");
+        for (int i = 0; i < arr.length; i++) {
+            arr[i] = scanner.nextInt();
+
+        }
+
+        System.out.println("enter the item you want to search");
+        int item = scanner.nextInt();
+
+        System.out.println(search(arr,item));
 
     }
 
     public static int search(int[]arr1 , int item){
+
+
         for (int i = 0; i < arr1.length; i++) {
             if(arr1[i] == item){
                 return i;
