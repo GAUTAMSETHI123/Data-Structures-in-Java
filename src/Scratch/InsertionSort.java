@@ -39,15 +39,13 @@ public class InsertionSort {
 
     public static int[] insertionSort(int[] arr1){
         for(int i =1; i<arr1.length; i++){
-            int key = arr1[i];
-            int j = i-1;
-            while(j>=0 && arr1[j]> key ){
+            int temp = arr1[i];
+            int j = i;
+            while(j>0 && arr1[j]> temp){
                 arr1[j+1] = arr1[j];
-
-
                 j--;
             }
-            arr1[j+1] = key;
+            arr1[j+1] = temp;
 
         }
         return arr1;
