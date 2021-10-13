@@ -41,11 +41,11 @@ public class InsertionSort {
         for(int i =1; i<arr1.length; i++){
             int temp = arr1[i];
             int j = i;
-            while(j>0 && arr1[j]> temp){
-                arr1[j+1] = arr1[j];
+            while(j>0 && arr1[j-1]> temp){
+                arr1[j] = arr1[j-1];
                 j--;
             }
-            arr1[j+1] = temp;
+            arr1[j] = temp;
 
         }
         return arr1;
