@@ -12,7 +12,7 @@ import java.util.Scanner;
 public class InsertionSort {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        System.out.print("Enter the size of the array");
+        System.out.println("Enter the size of the array");
         int N = scan.nextInt();
         int[] arr = new int[N];
 
