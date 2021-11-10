@@ -27,7 +27,14 @@ public class LinearSearch {
         System.out.println("enter the item you want to search");
         int item = scanner.nextInt();
 
-        System.out.println(search(arr,item));
+        int result = search(arr,item);
+
+        if(result == -1){
+            System.out.println("element is not present in the list");
+        }
+        else {
+            System.out.println(result + "is present in the list");
+        }
 
     }
 
@@ -36,7 +43,7 @@ public class LinearSearch {
 
         for (int i = 0; i < arr1.length; i++) {
             if(arr1[i] == item){
-                return i;
+                return arr1[i];
 
             }
 
