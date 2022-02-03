@@ -6,6 +6,7 @@
  */
 
 package MultiDimensionalArray;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Arrays2D {
@@ -20,15 +21,21 @@ public class Arrays2D {
 
             }
         }
-        for(int row=0; row< arr.length; row++){
-            for(int col=0; col< arr[row].length; col++){
-                System.out.print(arr[row][col] + " ");
+//        for(int row=0; row< arr.length; row++){
+//            for(int col=0; col< arr[row].length; col++){
+//                System.out.print(arr[row][col] + " ");
+//
+//
+//            }
+//            System.out.println();  // output in matrix format
+//        }
 
+
+        for(int row=0; row<arr.length; row++){
+            System.out.println(Arrays.toString(arr[row]));  //output in the array matrix format.
 
             }
-            System.out.println();
         }
 
 
     }
-}
