@@ -33,18 +33,22 @@ public class LinearSearch {
             System.out.println("element is not present in the list");
         }
         else {
-            System.out.println(result + "is present in the list");
+            // System.out.println(result + "is present in the list");
+            System.out.println("element is present at " + result + " index");
         }
 
     }
 
     public static int search(int[]arr1 , int item){
 
+        if(arr1.length == 0)
+            return -1;  //array not present
+
 
         for (int i = 0; i < arr1.length; i++) {
             if(arr1[i] == item){
-                return arr1[i];
-
+                // return arr1[i];  //returns the target item.
+                return i; //returns the index of the target element.
             }
 
         }
