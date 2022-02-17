@@ -7,6 +7,7 @@
 
 package Scratch;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class RotateArray {
@@ -30,25 +31,16 @@ public class RotateArray {
         System.out.println("enter number the times you want to rotate the array ");
         int N2 = scn.nextInt();
 
-        int[] arr2 = new int[N];
-        int index = 0;
-        for(int i=N2; i<N; i++){
-            arr2[index] = arr[i];
-            index++;
+        int[] temp = new int[arr.length];
+        for (int i = 0; i < arr.length; i++) {
+            temp[(i + N2) % arr.length] = arr[i];
+        }
+        for (int i = 0; i < arr.length; i++) {
+            arr[i] = temp[i];
         }
 
-        int count =0;
-        for(int index1 = N-N2;  index1<N; index1++  ){
-            arr2[index1] = arr[count];
-            count++;
+        System.out.println(Arrays.toString(arr));
 
-        }
-
-        for (int val2: arr2
-             ) {
-            System.out.print(val2);
-
-        }
 
     }
 }
