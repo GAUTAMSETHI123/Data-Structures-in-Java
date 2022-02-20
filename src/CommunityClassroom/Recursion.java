@@ -16,7 +16,7 @@ public class Recursion {
     }
 
     static void print(int n){
-        if(n==5){
+        if(n==5){   //base condition
             System.out.println(5);
             return;
         }
