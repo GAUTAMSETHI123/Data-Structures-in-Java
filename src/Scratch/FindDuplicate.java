@@ -7,6 +7,8 @@
 
 package Scratch;
 
+import java.lang.reflect.Array;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class FindDuplicate {
@@ -20,6 +22,8 @@ public class FindDuplicate {
             arr[i] = scn.nextInt();
 
         }
+
+        Arrays.sort(arr);
 
         for (int i = 0; i < size; i++) {
             int count=0;
