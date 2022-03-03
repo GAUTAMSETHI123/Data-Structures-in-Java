@@ -15,8 +15,8 @@ public class ProductOf2NumbersRecursive {
         Scanner sc = new Scanner(System.in);
         int num1 = sc.nextInt();
         int num2 = sc.nextInt();
-        int res = product(num1 ,num2);
-        System.out.println(res);
+        int result = product(num1 ,num2);
+        System.out.println(result);
     }
 
     static int product(int a , int b){
