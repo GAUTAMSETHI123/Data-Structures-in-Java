@@ -15,9 +15,9 @@ public class Arrays2D {
 
         int [][] arr = new int[3][3];
 
-        for(int row=0; row< arr.length; row++){
-            for(int col=0; col< arr[row].length; col++){
-                arr[row][col] = sc.nextInt();
+        for(int rows=0; rows< arr.length; rows++){
+            for(int col=0; col< arr[rows].length; col++){
+                arr[rows][col] = sc.nextInt();
 
             }
         }
