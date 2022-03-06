@@ -13,7 +13,7 @@ public class Arrays2D {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        int [][] arr = new int[3][3];
+        int [][] arr = new int[3][];
 
         for(int rows=0; rows< arr.length; rows++){
             for(int col=0; col< arr[rows].length; col++){
