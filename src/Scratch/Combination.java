@@ -11,7 +11,7 @@ import java.util.Scanner;
 
 public class Combination {
 
-    public static int factorial(int n) {
+    public static int factorialIterative(int n) {
         int ans = 1;
         for (int i = 1; i <= n; i++) {
             ans = ans * i;
@@ -27,11 +27,11 @@ public class Combination {
         int n = scan.nextInt();
         int r = scan.nextInt();
 
-        int num = factorial(n);
+        int num = factorialIterative(n);
 
-        int num2 = factorial(r);
+        int num2 = factorialIterative(r);
 
-        int num3 = factorial(n - r);
+        int num3 = factorialIterative(n - r);
         int num4 = num / (num2 * num3);
         System.out.println(num4);
 
