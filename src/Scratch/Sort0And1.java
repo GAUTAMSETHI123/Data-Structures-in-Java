@@ -12,13 +12,13 @@ import java.util.Scanner;
 
 public class Sort0And1 {
 
-    public static int[] sort(int []arr, int size){
+    public static int[] sort(int []arr, int size) {
         Scanner scn = new Scanner(System.in);
 
 
-        for(int i=0; i<size; i++){
-            for(int j=i+1; j<size; j++ ){
-                if(arr[i] > arr[j]){
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = i + 1; j < arr.length; j++) {
+                if (arr[i] > arr[j]) {
                     int temp = arr[i];
                     arr[i] = arr[j];
                     arr[j] = temp;
