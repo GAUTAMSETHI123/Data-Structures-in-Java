@@ -7,9 +7,13 @@
 
 package Recursion;
 
+import java.util.Scanner;
+
 public class ProductOfDigitsOfNumber {
     public static void main(String[] args) {
-        int res = sumOfDigits(1340);
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int res = sumOfDigits(n);
         System.out.println(res);
     }
 
