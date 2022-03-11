@@ -22,7 +22,7 @@ public class CheckAlphabet {
             System.out.println("alphabet is small case");
         }
         else{
-            System.out.println("not an alphabet");
+            System.out.println("not a alphabet");
         }
     }
 }
