@@ -22,18 +22,18 @@ public class CheckIfArrayIsSortedRecursive {
             A[i] = sc.nextInt();
         }
 
-        boolean res = isSorted(A,n);
+        boolean res = Sorted(A,n);
         System.out.println(res);
 
     }
 
 
-    public static boolean isSorted(int[] array, int length) {
+    public static boolean Sorted(int[] array, int length) {
         if (array == null || length < 2)
             return true;
         if (array[length - 2] > array[length - 1])
             return false;
-        return isSorted(array, length - 1);
+        return Sorted(array, length - 1);
     }
 
 
