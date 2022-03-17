@@ -17,16 +17,16 @@ public class LinearSearchRecursive {
     }
 
 
-    public static int  indexFind(int [] arr , int target, int index){
-        if(index == arr.length-1){
+    public static int  indexFind(int [] array , int target, int index){
+        if(index == array.length-1){
             return -1;
         }
 
-        if(arr[index] == target){
+        if(array[index] == target){
             return index;
         }
         else{
-            return indexFind(arr, target, index+1);
+            return indexFind(array, target, index+1);
         }
     }
 }
