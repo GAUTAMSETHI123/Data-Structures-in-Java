@@ -2,7 +2,7 @@
  *   Author: Gautam Sethi (GAUTAMSETHI123)
  *   Date: 03-02-2022
  *   Time: 13:06
- *   File: StringArraylist.java
+ *   File: StringInArraylist.java
  */
 
 package MultiDimensionalArray;
