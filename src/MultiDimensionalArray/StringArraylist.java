@@ -10,7 +10,7 @@ package MultiDimensionalArray;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class StringArraylist {
+public class StringInArraylist {
     public static void main(String[] args) {
         ArrayList<ArrayList<String>> ls2d = new ArrayList<>();
         ArrayList<String> x = new ArrayList<>();
