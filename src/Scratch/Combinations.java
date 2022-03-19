@@ -9,7 +9,7 @@ package Scratch;
 
 import java.util.Scanner;
 
-public class Combination {
+public class Combinations {
 
     public static int factorialIterative(int n) {
         int ans = 1;
