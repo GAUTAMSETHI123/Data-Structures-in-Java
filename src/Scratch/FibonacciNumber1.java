@@ -13,7 +13,7 @@ import java.util.Scanner;
 
 
 
-public class FibonacciNumber {
+public class FibonacciNumber1 {
     public static int fibNumber(int input){
         if(input==1){
             return 1;
