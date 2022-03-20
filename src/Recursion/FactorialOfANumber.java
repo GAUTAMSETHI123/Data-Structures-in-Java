@@ -7,7 +7,7 @@
 
 package Recursion;
 
-public class Factorial {
+public class FactorialOfANumber {
     public static void main(String[] args) {
         int ans = fact(5);
         System.out.println(ans);
