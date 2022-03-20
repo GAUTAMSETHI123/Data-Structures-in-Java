@@ -27,7 +27,7 @@
 
 ---------------  S U M M A R Y ------------
 
-Command Line: -javaagent:C:\Users\User\AppData\Local\JetBrains\Toolbox\apps\IDEA-U\ch-0\211.6693.111\lib\idea_rt.jar=54874:C:\Users\User\AppData\Local\JetBrains\Toolbox\apps\IDEA-U\ch-0\211.6693.111\bin -Dfile.encoding=UTF-8 Recursion.ReverseANumbeRec
+Command Line: -javaagent:C:\Users\User\AppData\Local\JetBrains\Toolbox\apps\IDEA-U\ch-0\211.6693.111\lib\idea_rt.jar=54874:C:\Users\User\AppData\Local\JetBrains\Toolbox\apps\IDEA-U\ch-0\211.6693.111\bin -Dfile.encoding=UTF-8 Recursion.ReverseANumbeRecursion
 
 Host: Intel(R) Core(TM) i7-4712MQ CPU @ 2.30GHz, 8 cores, 7G,  Windows 10 , 64 bit Build 19041 (10.0.19041.1503)
 Time: Wed Mar  9 18:42:45 2022 India Standard Time elapsed time: 0 seconds (0d 0h 0m 0s)
@@ -146,7 +146,7 @@ symbol engine: initialized successfully - sym options: 0x614 - pdb path: .;C:\Us
 
 VM Arguments:
 jvm_args: -javaagent:C:\Users\User\AppData\Local\JetBrains\Toolbox\apps\IDEA-U\ch-0\211.6693.111\lib\idea_rt.jar=54874:C:\Users\User\AppData\Local\JetBrains\Toolbox\apps\IDEA-U\ch-0\211.6693.111\bin -Dfile.encoding=UTF-8 
-java_command: Recursion.ReverseANumbeRec
+java_command: Recursion.ReverseANumbeRecursion
 java_class_path (initial): C:\Users\User\IdeaProjects\Data-Structures-in-Java\out\production\Coding
 Launcher Type: SUN_STANDARD
 
