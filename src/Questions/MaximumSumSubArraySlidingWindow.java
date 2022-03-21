@@ -7,7 +7,7 @@
 
 package Questions;
 
-public class MaximumSumOfSubArraySlidingWindow {
+public class MaximumSumSubArraySlidingWindow {
     static int maxSum(int arr[], int n, int k)
     {
         // n must be greater
