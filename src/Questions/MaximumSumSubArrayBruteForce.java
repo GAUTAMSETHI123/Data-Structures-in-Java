@@ -7,7 +7,7 @@
 
 package Questions;
 
-public class MaximumSumOfSubArray {
+public class MaximumSumSubArrayBruteForce {
     static int maxSum(int arr[], int n, int k)
     {
         // Initialize result
