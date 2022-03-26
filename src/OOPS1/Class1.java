@@ -32,7 +32,7 @@ public class Class1 {
 
 }
 
-class Student {
+class Student {  //instance variables
     int rollNo;
     String Name;
     double marks;
