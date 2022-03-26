@@ -37,12 +37,12 @@ class Student {
     String Name;
     double marks;
 
-//    Student()
-//    {
-//        this.rollNo = 13;
-//        this.Name = "Gautam";
-//        this.marks = 89.8;
-//    }
+    Student()
+    {
+        this.rollNo = 13;
+        this.Name = "Gautam";
+        this.marks = 89.8;
+    }
 
     Student(int roll, String Name, float marks){
         this.marks = marks;
