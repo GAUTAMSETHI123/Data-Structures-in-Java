@@ -37,13 +37,14 @@ class Student {
     String Name;
     double marks;
 
-    Student()
-    {
-        this.rollNo = 13;
-        this.Name = "Gautam";
-        this.marks = 89.8;
-    }
+//    Student()
+//    {
+//        this.rollNo = 13;
+//        this.Name = "Gautam";
+//        this.marks = 89.8;
+//    }
 
+    //Parameterised constructor
     Student(int roll, String Name, float marks){
         this.marks = marks;
         this.rollNo = roll;
