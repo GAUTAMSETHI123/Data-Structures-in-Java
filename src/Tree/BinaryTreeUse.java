@@ -9,14 +9,14 @@ package Tree;
 
 public class BinaryTreeUse {
 
-    public static void printTree(BinaryTreeNode<Integer> root){
+    public static void printBinaryTree(BinaryTreeNode<Integer> root){
 
         if(root == null){
             return ;
         }
         System.out.println(root.data);
-        printTree(root.left);
-        printTree(root.right);
+        printBinaryTree(root.left);
+        printBinaryTree(root.right);
 
     }
 
@@ -37,7 +37,7 @@ public class BinaryTreeUse {
         rootLeft.right = twoRight;
         rootRight.left = threeLeft;
 
-        printTree(root);
+        printBinaryTree(root);
 
 
 
