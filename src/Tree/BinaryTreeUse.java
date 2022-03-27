@@ -7,6 +7,8 @@
 
 package Tree;
 
+import java.util.Scanner;
+
 public class BinaryTreeUse {
 
     public static void printBinaryTree(BinaryTreeNode<Integer> root){
@@ -31,22 +33,44 @@ public class BinaryTreeUse {
     }
 
 
+    public static BinaryTreeNode<Integer> takeInputTree(){
+        System.out.println("enter root data");
+        Scanner sc = new Scanner(System.in);
+        int rootData = sc.nextInt();
+
+        if(rootData == -1){
+            return null;
+        }
+
+        BinaryTreeNode<Integer> root = new BinaryTreeNode<>(rootData);
+        BinaryTreeNode<Integer> leftChild = takeInputTree();
+        BinaryTreeNode<Integer> rightChild = takeInputTree();
+        root.left = leftChild;
+        root.right = rightChild;
+        return root;
+
+
+    }
+
+
     public static void main(String[] args) {
-        BinaryTreeNode<Integer> root = new BinaryTreeNode<>(1);
-        BinaryTreeNode<Integer> rootLeft = new BinaryTreeNode<>(2);
-        BinaryTreeNode<Integer> rootRight = new BinaryTreeNode<>(3);
+//        BinaryTreeNode<Integer> root = new BinaryTreeNode<>(1);
+//        BinaryTreeNode<Integer> rootLeft = new BinaryTreeNode<>(2);
+//        BinaryTreeNode<Integer> rootRight = new BinaryTreeNode<>(3);
+//
+//        root.left = rootLeft;
+//        root.right= rootRight;
+//
+//
+//        BinaryTreeNode<Integer> twoRight = new BinaryTreeNode<>(5);
+//        BinaryTreeNode<Integer> threeLeft = new BinaryTreeNode<>(4);
+//
+//
+//        rootLeft.right = twoRight;
+//        rootRight.left = threeLeft;
 
-        root.left = rootLeft;
-        root.right= rootRight;
 
-
-        BinaryTreeNode<Integer> twoRight = new BinaryTreeNode<>(5);
-        BinaryTreeNode<Integer> threeLeft = new BinaryTreeNode<>(4);
-
-
-        rootLeft.right = twoRight;
-        rootRight.left = threeLeft;
-
+        BinaryTreeNode<Integer>root = takeInputTree();
         printBinaryTree(root);
 
 
