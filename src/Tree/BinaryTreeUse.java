@@ -14,7 +14,17 @@ public class BinaryTreeUse {
         if(root == null){
             return ;
         }
-        System.out.println(root.data);
+        System.out.print(root.data+ ":");
+
+        if(root.left != null){
+            System.out.print("L" + root.left.data + ",");
+        }
+
+        if(root.right != null){
+            System.out.print("R" + root.right.data + ",");
+        }
+
+        System.out.println();
         printBinaryTree(root.left);
         printBinaryTree(root.right);
 
