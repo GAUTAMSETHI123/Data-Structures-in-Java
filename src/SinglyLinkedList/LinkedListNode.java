@@ -2,17 +2,17 @@
  *   Author: Gautam Sethi (GAUTAMSETHI123)
  *   Date: 27-02-2021
  *   Time: 20:41
- *   File: Node.java
+ *   File: LinkedListNode.java
  */
 
 package SinglyLinkedList;
 
-public class Node {
+public class LinkedListNode {
 
     int data;
-    Node next;
+    LinkedListNode next;
 
-    public Node(int data){
+    public LinkedListNode(int data){
         this.data = data;
     }
 }
