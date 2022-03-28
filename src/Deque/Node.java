@@ -2,7 +2,7 @@
  *   Author: Gautam Sethi (GAUTAMSETHI123)
  *   Date: 25-06-2021
  *   Time: 09:51
- *   File: Node.java
+ *   File: LinkedListNode.java
  */
 
 package Deque;
