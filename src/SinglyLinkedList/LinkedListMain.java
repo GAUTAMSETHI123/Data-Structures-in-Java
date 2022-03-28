@@ -13,9 +13,10 @@ public class LinkedListMain {
         LinkedList1 ll = new LinkedList1();
 
 
-        ll.addFront(new Node(14));
-        ll.addFront(new Node(15));
-        ll.addFront(new Node(16));
+        ll.addFront(new LinkedListNode(14));
+
+        ll.addFront(new LinkedListNode(15));
+        ll.addFront(new LinkedListNode(16));
 
         ll.display();
     }
