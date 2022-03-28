@@ -9,7 +9,7 @@ package SinglyLinkedList;
 
 public class LinkedList1 {
 
-    Node head;
+    LinkedListNode head;
 
 
     public LinkedList1() {
@@ -18,19 +18,19 @@ public class LinkedList1 {
 
 
     public void display() {
-        Node temp = this.head;
+        LinkedListNode temp = this.head;
         while (temp != null) {
             System.out.println(temp.data);
             temp = temp.next;
         }
     }
 
-    public void addLast(Node newNode) {
+    public void addLast(LinkedListNode newNode) {
         if (isEmpty()) {
             head = newNode;
 
         } else {
-            Node temp = this.head;
+            LinkedListNode temp = this.head;
             while (temp.next != null) {
                 temp = temp.next;
             }
@@ -49,7 +49,7 @@ public class LinkedList1 {
     }
 
 
-    public void addFront(Node newNode) {
+    public void addFront(LinkedListNode newNode) {
         if (isEmpty()) {
             head = newNode;
         } else {
@@ -58,8 +58,8 @@ public class LinkedList1 {
         }
     }
 
-    public void addPos(int pos, Node data2) {
-        Node temp = this.head;
+    public void addPos(int pos, LinkedListNode data2) {
+        LinkedListNode temp = this.head;
         for (int i = 0; i < pos - 1; i++) {
             temp = temp.next;
         }
