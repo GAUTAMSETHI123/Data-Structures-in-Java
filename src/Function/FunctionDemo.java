@@ -8,7 +8,7 @@
 package Function;
 import java.util.Scanner;
 
-public class FunctionDemo {
+public class FunctionDemo1{
     public static void main(String[] args) {
         addition(15,87);
 
