@@ -69,11 +69,11 @@ public class LinkedList1 {
 
     }
 
-    public Node deleteFront() {
+    public LinkedListNode deleteFront() {
         if (isEmpty())
             System.out.println("the list is empty");
         else {
-            Node temp = head;
+            LinkedListNode temp = head;
             head = head.next;
             temp.next = null;
             return temp;
@@ -84,12 +84,12 @@ public class LinkedList1 {
     }
 
 
-    public Node deleteLast() {
+    public LinkedListNode deleteLast() {
         if (isEmpty())
             System.out.println("the list is empty");
         else {
-            Node current = head;
-            Node previous = head;
+            LinkedListNode current = head;
+            LinkedListNode previous = head;
             while (current.next != null) {
                 previous = current;
                 current = current.next;
@@ -102,13 +102,13 @@ public class LinkedList1 {
         return null;
     }
 
-    public Node removeAt(int pos) {
+    public LinkedListNode removeAt(int pos) {
 
         if (head == null) {
             System.out.println("Element Not Found!!");
         } else {
-            Node current = head;
-            Node previous = head;
+            LinkedListNode current = head;
+            LinkedListNode previous = head;
             for (int i = 0; i < pos - 1; i++) {
                 previous = current;
                 current = current.next;
