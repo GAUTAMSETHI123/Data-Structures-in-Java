@@ -2,7 +2,7 @@
  *   Author: Gautam Sethi (GAUTAMSETHI123)
  *   Date: 19-05-2021
  *   Time: 18:49
- *   File: FunctionDemo.java
+ *   File: FunctionDemo1.java
  */
 
 package Function;
