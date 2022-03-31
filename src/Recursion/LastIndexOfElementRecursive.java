@@ -17,9 +17,9 @@ public class LastIndexOfElementRecursive {
         Scanner sc = new Scanner(System.in);
 
         int [] arr = {1,2,3,2,4};
-        int target = sc.nextInt();
+        int target1 = sc.nextInt();
 
-        int res = lastIndex(arr, target, arr.length-1);
+        int res = lastIndex(arr, target1, arr.length-1);
         System.out.println(res);
 
     }
