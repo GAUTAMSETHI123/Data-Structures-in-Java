@@ -14,9 +14,9 @@ public class FirstIndexOfElementRecursive {
         Scanner sc = new Scanner(System.in);
 
         int [] arr = {1,2,3,2,4};
-        int target = sc.nextInt();
+        int target1= sc.nextInt();
 
-        int res = firstIndex(arr, target,0);
+        int res = firstIndex(arr, target1,0);
         System.out.println(res);
 
     }
