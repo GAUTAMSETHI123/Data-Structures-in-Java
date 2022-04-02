@@ -10,11 +10,11 @@ import java.util.Scanner;
 public class SumOrProduct {
     public static void main(String[] args) {
 
-        Scanner scan = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         System.out.println("enter the number");
-        int N = scan.nextInt();
+        int N = scanner.nextInt();
         System.out.println("enter the choice");
-        int C = scan.nextInt();
+        int C = scanner.nextInt();
         if(C==1){
             int sum =0;
             for (int i = 1; i <=N ; i++) {
