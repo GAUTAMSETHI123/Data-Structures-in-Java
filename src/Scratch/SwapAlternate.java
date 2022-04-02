@@ -2,7 +2,7 @@ package Scratch;
 
 import java.util.Scanner;
 
-public class SwapAlternate {
+public class SwappingAlternate {
     public static int[] takeInput(int size){
         Scanner scn = new Scanner(System.in);
 
