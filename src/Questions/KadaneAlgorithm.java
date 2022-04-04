@@ -8,7 +8,7 @@
 package Questions;
 
 
-    import java.util.*;
+import java.util.*;
 import java.lang.*;
 import java.io.*;
     class Main {
