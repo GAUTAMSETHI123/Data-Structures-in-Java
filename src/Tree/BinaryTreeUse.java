@@ -95,7 +95,7 @@ public class BinaryTreeUse {
         BinaryTreeNode<Integer>root = takeInputTree();
         printBinaryTree(root);
         System.out.println("number of nodes present:" + nodeCount(root));
-        System.out.println("sum of nodes: " + nodeSum(root));
+        System.out.println("sum of nodes:" + nodeSum(root));
 
 
 
