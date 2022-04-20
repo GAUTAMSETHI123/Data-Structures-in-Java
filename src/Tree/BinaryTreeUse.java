@@ -66,9 +66,8 @@ public class BinaryTreeUse {
         if(root == null){
             return 0;
         }
-        if(root.left == null && root.right== null){
-            return root.data;
-        }
+
+
         int leftsum = nodeSum(root.left);
         int rightSum = nodeSum(root.right);
         return root.data + leftsum + rightSum;
