@@ -52,6 +52,16 @@ public class BinaryTreeUse {
 
     }
 
+    public static int nodeCount(BinaryTreeNode<Integer> root){
+        if(root == null){
+            return 0;
+        }
+
+        int leftCount = nodeCount(root.left);
+        int rightCount = nodeCount(root.right);
+        return 1 + leftCount + rightCount;
+    }
+
 
     public static void main(String[] args) {
 //        BinaryTreeNode<Integer> root = new BinaryTreeNode<>(1);
@@ -72,6 +82,7 @@ public class BinaryTreeUse {
 
         BinaryTreeNode<Integer>root = takeInputTree();
         printBinaryTree(root);
+        System.out.println("number of nodes:" + nodeCount(root));
 
 
 
