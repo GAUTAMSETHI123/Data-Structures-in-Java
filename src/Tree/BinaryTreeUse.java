@@ -82,7 +82,7 @@ public class BinaryTreeUse {
 
         BinaryTreeNode<Integer>root = takeInputTree();
         printBinaryTree(root);
-        System.out.println("number of nodes:" + nodeCount(root));
+        System.out.println("number of nodes present:" + nodeCount(root));
 
 
 
