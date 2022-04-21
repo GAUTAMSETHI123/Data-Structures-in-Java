@@ -11,18 +11,18 @@ import java.util.Scanner;
 
 public class BinaryTreeUse {
 
-    public static void printBinaryTree(BinaryTreeNode<Integer> root){
+    public static void printBinaryTree(BinaryTreeNode<Integer> root) {
 
-        if(root == null){
-            return ;
+        if (root == null) {
+            return;
         }
-        System.out.print(root.data+ ":");
+        System.out.print(root.data + ":");
 
-        if(root.left != null){
+        if (root.left != null) {
             System.out.print("L" + root.left.data + ",");
         }
 
-        if(root.right != null){
+        if (root.right != null) {
             System.out.print("R" + root.right.data + ",");
         }
 
@@ -33,12 +33,12 @@ public class BinaryTreeUse {
     }
 
 
-    public static BinaryTreeNode<Integer> takeInputTree(){
+    public static BinaryTreeNode<Integer> takeInputTree() {
         System.out.println("enter root data");
         Scanner sc = new Scanner(System.in);
         int rootData = sc.nextInt();
 
-        if(rootData == -1){
+        if (rootData == -1) {
             return null;
         }
 
@@ -52,8 +52,8 @@ public class BinaryTreeUse {
 
     }
 
-    public static int nodeCount(BinaryTreeNode<Integer> root){
-        if(root == null){
+    public static int nodeCount(BinaryTreeNode<Integer> root) {
+        if (root == null) {
             return 0;
         }
 
@@ -62,8 +62,8 @@ public class BinaryTreeUse {
         return 1 + leftCount + rightCount;
     }
 
-    public static int nodeSum(BinaryTreeNode<Integer> root){
-        if(root == null){
+    public static int nodeSum(BinaryTreeNode<Integer> root) {
+        if (root == null) {
             return 0;
         }
 
@@ -73,31 +73,45 @@ public class BinaryTreeUse {
         return root.data + leftsum + rightSum;
     }
 
-    public static int largestData(BinaryTreeNode<Integer> root){
-        if(root == null){
+    public static int largestData(BinaryTreeNode<Integer> root) {
+        if (root == null) {
             return -1;
         }
         int left = largestData(root.left);
         int right = largestData(root.right);
-        return Math.max(root.data,Math.max(left,right));
+        return Math.max(root.data, Math.max(left, right));
     }
 
-    public static int greaterNode(BinaryTreeNode<Integer> root, int x){
-        if(root == null){
+    public static int greaterNode(BinaryTreeNode<Integer> root, int x) {
+        if (root == null) {
             return 0;
         }
         int count = (root.data > x) ? 1 : 0;
-        if(root.left != null){
+        if (root.left != null) {
             count += greaterNode(root.left, x);
         }
-        if(root.right !=null){
-            count += greaterNode(root.right,x);
+        if (root.right != null) {
+            count += greaterNode(root.right, x);
         }
         return count;
     }
 
+    public static int leafNodes(BinaryTreeNode<Integer> root) {
 
-    public static void main(String[] args) {
+        if (root == null) {
+            return 0;
+        }
+        if (root.left == null && root.right == null) {
+            return 1;
+        }
+
+
+            return leafNodes(root.left) + leafNodes(root.right);
+
+        }
+
+
+        public static void main (String[]args){
 //        BinaryTreeNode<Integer> root = new BinaryTreeNode<>(1);
 //        BinaryTreeNode<Integer> rootLeft = new BinaryTreeNode<>(2);
 //        BinaryTreeNode<Integer> rootRight = new BinaryTreeNode<>(3);
@@ -114,14 +128,16 @@ public class BinaryTreeUse {
 //        rootRight.left = threeLeft;
 
 
-        BinaryTreeNode<Integer>root = takeInputTree();
-        printBinaryTree(root);
-        System.out.println("number of nodes present:" + nodeCount(root));
-        System.out.println("sum of nodes:" + nodeSum(root));
-        System.out.println("Largest node in the Binary tree: " + largestData(root));
-        System.out.println("Number of Nodes Greater than given value: " + greaterNode(root, 5));
+            BinaryTreeNode<Integer> root = takeInputTree();
+            printBinaryTree(root);
+            System.out.println("number of nodes present:" + nodeCount(root));
+            System.out.println("sum of nodes:" + nodeSum(root));
+            System.out.println("Largest node in the Binary tree: " + largestData(root));
+            System.out.println("Number of Nodes Greater than given value: " + greaterNode(root, 5));
+            System.out.println("Number Of Leaf nodes are: " + leafNodes(root));
 
 
-
+        }
     }
-}
+
+
