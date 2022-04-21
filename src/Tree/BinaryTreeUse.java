@@ -150,6 +150,7 @@ public class BinaryTreeUse {
             System.out.println("Largest node in the Binary tree: " + largestData(root));
             System.out.println("Number of Nodes Greater than given value: " + greaterNode(root, 5));
             System.out.println("Number Of leaf nodes are: " + leafNodes(root));
+            System.out.println("number of nodes at depth k :");
             DepthK(root, 2);
 
 
