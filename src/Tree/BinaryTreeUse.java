@@ -73,6 +73,15 @@ public class BinaryTreeUse {
         return root.data + leftsum + rightSum;
     }
 
+    public static int largestData(BinaryTreeNode<Integer> root){
+        if(root == null){
+            return -1;
+        }
+        int left = largestData(root.left);
+        int right = largestData(root.right);
+        return Math.max(root.data,Math.max(left,right));
+    }
+
 
     public static void main(String[] args) {
 //        BinaryTreeNode<Integer> root = new BinaryTreeNode<>(1);
@@ -95,6 +104,7 @@ public class BinaryTreeUse {
         printBinaryTree(root);
         System.out.println("number of nodes present:" + nodeCount(root));
         System.out.println("sum of nodes:" + nodeSum(root));
+        System.out.println("Largest node in the tree: " + largestData(root));
 
 
 
