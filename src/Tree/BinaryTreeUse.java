@@ -110,6 +110,21 @@ public class BinaryTreeUse {
 
         }
 
+    public static void DepthK(BinaryTreeNode<Integer> root, int k){
+        if(root == null){
+            return;
+        }
+
+        if(k ==0){
+            System.out.print(root.data);
+            return;
+        }
+        DepthK(root.left, k-1);
+        DepthK(root.right, k-1);
+    }
+
+
+
 
         public static void main (String[]args){
 //        BinaryTreeNode<Integer> root = new BinaryTreeNode<>(1);
@@ -135,6 +150,7 @@ public class BinaryTreeUse {
             System.out.println("Largest node in the Binary tree: " + largestData(root));
             System.out.println("Number of Nodes Greater than given value: " + greaterNode(root, 5));
             System.out.println("Number Of leaf nodes are: " + leafNodes(root));
+            DepthK(root, 2);
 
 
         }
