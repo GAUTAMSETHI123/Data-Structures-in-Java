@@ -134,7 +134,7 @@ public class BinaryTreeUse {
             System.out.println("sum of nodes:" + nodeSum(root));
             System.out.println("Largest node in the Binary tree: " + largestData(root));
             System.out.println("Number of Nodes Greater than given value: " + greaterNode(root, 5));
-            System.out.println("Number Of Leaf nodes are: " + leafNodes(root));
+            System.out.println("Number Of leaf nodes are: " + leafNodes(root));
 
 
         }
