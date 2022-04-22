@@ -31,6 +31,14 @@ public class BinaryTreeUse {
         printBinaryTree(root.right);
 
     }
+    static void printInorder(BinaryTreeNode <Integer> node)
+    {
+        if (node == null)
+            return;
+        printInorder(node.left);
+        System.out.print(node.data + " ");
+        printInorder(node.right);
+    }
 
 
     public static BinaryTreeNode<Integer> takeInputTree() {
@@ -123,10 +131,22 @@ public class BinaryTreeUse {
         DepthK(root.right, k-1);
     }
 
+    public static void replaceNodeWithDepth(BinaryTreeNode<Integer> root, int level){
+        if(root == null){
+            return;
+        }
+        root.data = level;
+
+        replaceNodeWithDepth(root.left,level+1);
+        replaceNodeWithDepth(root.right, level+1);
+
+    }
 
 
 
-        public static void main (String[]args){
+
+
+    public static void main (String[]args){
 //        BinaryTreeNode<Integer> root = new BinaryTreeNode<>(1);
 //        BinaryTreeNode<Integer> rootLeft = new BinaryTreeNode<>(2);
 //        BinaryTreeNode<Integer> rootRight = new BinaryTreeNode<>(3);
@@ -152,6 +172,8 @@ public class BinaryTreeUse {
             System.out.println("Number Of leaf nodes are: " + leafNodes(root));
             System.out.println("number of nodes at depth k :");
             DepthK(root, 2);
+            replaceNodeWithDepth(root,0);
+            printInorder(root);
 
 
         }
