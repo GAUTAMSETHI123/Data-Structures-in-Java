@@ -14,7 +14,7 @@ public class NodeAtDepthK {
         }
 
         if(k ==0){
-            System.out.print(root.data);
+            System.out.println(root.data);
             return;
         }
         DepthK(root.left, k-1);
