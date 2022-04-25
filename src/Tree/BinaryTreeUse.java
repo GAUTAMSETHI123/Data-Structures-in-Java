@@ -7,6 +7,7 @@
 
 package Tree;
 
+import javax.swing.*;
 import java.util.Scanner;
 
 public class BinaryTreeUse {
@@ -31,8 +32,8 @@ public class BinaryTreeUse {
         printBinaryTree(root.right);
 
     }
-    static void printInorder(BinaryTreeNode <Integer> node)
-    {
+
+    static void printInorder(BinaryTreeNode<Integer> node) {
         if (node == null)
             return;
         printInorder(node.left);
@@ -114,39 +115,49 @@ public class BinaryTreeUse {
         }
 
 
-            return leafNodes(root.left) + leafNodes(root.right);
+        return leafNodes(root.left) + leafNodes(root.right);
 
-        }
+    }
 
-    public static void DepthK(BinaryTreeNode<Integer> root, int k){
-        if(root == null){
+    public static void DepthK(BinaryTreeNode<Integer> root, int k) {
+        if (root == null) {
             return;
         }
 
-        if(k ==0){
+        if (k == 0) {
             System.out.print(root.data);
             return;
         }
-        DepthK(root.left, k-1);
-        DepthK(root.right, k-1);
+        DepthK(root.left, k - 1);
+        DepthK(root.right, k - 1);
     }
 
-    public static void replaceNodeWithDepth(BinaryTreeNode<Integer> root, int level){
-        if(root == null){
+    public static void replaceNodeWithDepth(BinaryTreeNode<Integer> root, int level) {
+        if (root == null) {
             return;
         }
         root.data = level;
 
-        replaceNodeWithDepth(root.left,level+1);
-        replaceNodeWithDepth(root.right, level+1);
+        replaceNodeWithDepth(root.left, level + 1);
+        replaceNodeWithDepth(root.right, level + 1);
 
     }
 
+    public static BinaryTreeNode<Integer> removeLeaf(BinaryTreeNode<Integer> root) {
+        if (root == null) {
+            return null;
+        }
+        if (root.left == null && root.right == null) {
+            return null;
+        }
+
+        root.left = removeLeaf(root.left);
+        root.right = removeLeaf(root.right);
+        return root;
+    }
 
 
-
-
-    public static void main (String[]args){
+        public static void main (String[]args){
 //        BinaryTreeNode<Integer> root = new BinaryTreeNode<>(1);
 //        BinaryTreeNode<Integer> rootLeft = new BinaryTreeNode<>(2);
 //        BinaryTreeNode<Integer> rootRight = new BinaryTreeNode<>(3);
@@ -166,17 +177,21 @@ public class BinaryTreeUse {
             BinaryTreeNode<Integer> root = takeInputTree();
             printBinaryTree(root);
             System.out.println("number of nodes present:" + nodeCount(root));
-            System.out.println("sum of nodes:" + nodeSum(root));
+            int sumNode = nodeSum(root);
+            System.out.println("sum of nodes:" + sumNode);
             System.out.println("Largest node in Binary tree: " + largestData(root));
             System.out.println("Number of Nodes Greater than given value: " + greaterNode(root, 5));
             System.out.println("Number Of leaf nodes are: " + leafNodes(root));
             System.out.println("number of nodes at depth k :");
             DepthK(root, 2);
-            replaceNodeWithDepth(root,0);
+            //replaceNodeWithDepth(root, 0);
+            // printInorder(root);
+            removeLeaf(root);
             printInorder(root);
 
 
         }
     }
+
 
 
