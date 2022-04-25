@@ -8,7 +8,7 @@
 package Tree;
 
 public class InvertBinaryTree {
-    public TreeNode invertTree(TreeNode root) {
+    public BinaryTreeNode<Integer> invertTree(BinaryTreeNode<Integer> root) {
         if(root == null) {
             return root;
         }
@@ -18,7 +18,7 @@ public class InvertBinaryTree {
         }
 
         // Swapping the left and right nodes using temp variable
-        TreeNode temp = root.left;
+        BinaryTreeNode<Integer> temp = root.left;
         root.left = root.right;
         root.right = temp;
 
