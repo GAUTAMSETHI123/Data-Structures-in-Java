@@ -2,12 +2,12 @@
  *   Author: Gautam Sethi (GAUTAMSETHI123)
  *   Date: 25-04-2022
  *   Time: 23:54
- *   File: InvertBinaryTree.java
+ *   File: InvertBinaryTree226.java
  */
 
 package Tree;
 
-public class InvertBinaryTree {
+public class InvertBinaryTree226 {
     public BinaryTreeNode<Integer> invertTree(BinaryTreeNode<Integer> root) {
         if(root == null) {
             return root;
