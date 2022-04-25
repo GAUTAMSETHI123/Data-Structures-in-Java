@@ -18,6 +18,6 @@ public class MaximumHeightOfBinaryTree {
         if(root.right == null && root.left != null){
             return maxDepth(root.left) + 1;
         }
-        return Math.min(maxDepth(root.left), maxDepth(root.right)) + 1;
+        return Math.max(maxDepth(root.left), maxDepth(root.right)) + 1;
     }
 }
