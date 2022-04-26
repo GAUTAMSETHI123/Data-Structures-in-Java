@@ -12,7 +12,7 @@ import java.util.Scanner;
 public class PairSum {
     public static void main(String[] args) {
         Scanner scn = new Scanner(System.in);
-        System.out.println("enter the size of the array");
+        System.out.println("enter the size of  array");
         int N = scn.nextInt();
         System.out.println("Enter the number you want find pair of:");
         int N2 = scn.nextInt();
