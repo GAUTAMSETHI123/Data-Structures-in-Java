@@ -11,7 +11,7 @@ import static java.util.Arrays.binarySearch;
 
 public class BinarySearch {
     public static void main(String[] args) {
-        int[] arr = {10, 14, 17, 23, 34, 56, 58, 60, 61};
+        int[] arr = {10, 14, 17, 23, 34, 56, 58, 60};
         System.out.println(binarySearch(arr, 67));
     }
 
