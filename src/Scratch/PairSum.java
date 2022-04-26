@@ -14,7 +14,7 @@ public class PairSum {
         Scanner scn = new Scanner(System.in);
         System.out.println("enter the size of  array");
         int N = scn.nextInt();
-        System.out.println("Enter the number you want find pair of:");
+        System.out.println("Enter the number you want find pair");
         int N2 = scn.nextInt();
         System.out.println("enter the array elements");
         int[] arr = new int[N];
