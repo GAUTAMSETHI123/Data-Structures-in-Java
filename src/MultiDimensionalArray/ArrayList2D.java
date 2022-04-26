@@ -13,7 +13,7 @@ import java.util.Scanner;
 
 public class ArrayList2D {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
         ArrayList<ArrayList<Integer>> list =  new ArrayList<>();
 
@@ -24,7 +24,7 @@ public class ArrayList2D {
 
         for (int i = 0; i < 3; i++) {
             for (int j = 0; j < 3; j++) {
-                list.get(i).add(sc.nextInt());
+                list.get(i).add(scanner.nextInt());
                 
             }
         }
