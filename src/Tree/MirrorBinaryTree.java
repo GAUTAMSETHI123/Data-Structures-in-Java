@@ -9,7 +9,7 @@ package Tree;
 
 public class MirrorBinaryTree {
 
-    public static void mirror(BinaryTreeNode<Integer> root){
+    public static void mirrorTree(BinaryTreeNode<Integer> root){
         if(root == null){
             return;
         }
@@ -17,8 +17,8 @@ public class MirrorBinaryTree {
             return;
         }
 
-        mirror(root.left);
-        mirror(root.right);
+        mirrorTree(root.left);
+        mirrorTree(root.right);
         BinaryTreeNode<Integer> temp = root.left;
         root.left = root.right;
         root.right = temp;
