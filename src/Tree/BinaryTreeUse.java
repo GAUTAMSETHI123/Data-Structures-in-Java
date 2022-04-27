@@ -156,6 +156,21 @@ public class BinaryTreeUse {
         return root;
     }
 
+    public static void mirror(BinaryTreeNode<Integer> root){
+        if(root == null){
+            return;
+        }
+        if(root.left == null && root.right == null){
+            return;
+        }
+
+        mirror(root.left);
+        mirror(root.right);
+        BinaryTreeNode<Integer> temp = root.left;
+        root.left = root.right;
+        root.right = temp;
+    }
+
 
         public static void main (String[]args){
 //        BinaryTreeNode<Integer> root = new BinaryTreeNode<>(1);
@@ -186,7 +201,8 @@ public class BinaryTreeUse {
             DepthK(root, 2);
             //replaceNodeWithDepth(root, 0);
             // printInorder(root);
-            removeLeaf(root);
+            // removeLeaf(root);
+            mirror(root);
             printInorder(root);
 
 
