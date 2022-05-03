@@ -10,6 +10,8 @@ package Tree;
 import javax.swing.*;
 import java.util.Scanner;
 
+import static Tree.BalancedBinaryTree.isBalanced;
+
 public class BinaryTreeUse {
 
     public static void printBinaryTree(BinaryTreeNode<Integer> root) {
@@ -202,8 +204,9 @@ public class BinaryTreeUse {
             //replaceNodeWithDepth(root, 0);
             // printInorder(root);
             // removeLeaf(root);
-            mirror(root);
-            printInorder(root);
+            //mirror(root);
+            System.out.println("Is Balanced: " +  isBalanced(root));
+            //printInorder(root);
 
 
         }
