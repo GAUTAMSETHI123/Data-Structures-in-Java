@@ -29,6 +29,8 @@ public class GraphRepresentation {
     public void insertEdge(int s, int d) {
         adj[s].add(d);
         adj[d].add(s);
+        System.out.println(adj[s]);
+        System.out.println(adj[d]);
 
     }
 
@@ -41,6 +43,7 @@ public class GraphRepresentation {
         int v = sc.nextInt(); //no of vertices
         int e = sc.nextInt(); //no of edges
         GraphRepresentation gr = new GraphRepresentation(v);
+        System.out.println("enter number of edges");
 
         for (int i = 0; i < e; i++) {
             int s = sc.nextInt();
