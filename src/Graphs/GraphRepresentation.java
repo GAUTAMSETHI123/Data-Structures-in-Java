@@ -29,7 +29,7 @@ public class GraphRepresentation {
     public void insertEdge(int s, int d) {
         adj[s].add(d);
         adj[d].add(s);
-        System.out.print(adj[d]);
+        System.out.print(adj[d] + "-->");
         System.out.println(adj[s]);
 
     }
